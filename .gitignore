@@ -1,33 +1,12 @@
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
-*.su
+#include <stdio.h>
+int main(int argc, char const *argv[])
+{
+	int a,b;
+	for (a = -40; a <= 110; a+=10)
+	{
+		printf("F %d==", a);
+		b = 9/5*a+32;
+		printf("C %d\n", b);
+	}
+	return 0;
+}
